@@ -1,0 +1,436 @@
+/* Juan Aguirre */
+
+
+.topBar {
+  background: #4C4C4C;
+  height: 70px;
+}
+
+.bottomBar {
+  height: 60px;
+  background: #4C4C4C;
+  margin-top: 10px;
+}
+
+.clear {
+  clear: both;
+}
+
+.col {
+  float: left;
+}
+
+.tile {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.grid01 {
+  width: 75%;
+  padding: 0;
+  background-color: white;
+}
+.grid01:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid02 {
+  width: calc(25% - 10px);
+  padding: 0;
+  margin-right: 10px;
+  background-color: white;
+}
+.grid02:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid01 > .tile {
+  float: left;
+  width: 25%;
+  padding: 10px 0 0 10px;
+  box-sizing: border-box;
+}
+
+.grid02 > .tile {
+  float: left;
+  width: 100%;
+  padding: 10px 0 0 10px;
+  box-sizing: border-box;
+}
+
+.tile-content {
+ background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+
+
+.tile-content {
+  width: calc(100% - 2px);
+  
+  border: 1px solid #C1C1C1;
+  /*height: $height;*/
+  position: relative;
+}
+
+
+
+.tile-content:before {
+  display: block;
+  content: " ";
+  width: 100%;
+  padding-top: 100%;
+}
+.tile-content > .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.grid02 .tile-content.first {
+  /*height: calc((331px * 2) + 10px);*/
+  position: relative;
+}
+.grid02 .tile-content.first:before {
+  display: block;
+  content: " ";
+  width: 100%;
+  padding-top: 158%;
+}
+.grid02 .tile-content.first > .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.grid02 .tile-content.second {
+  /*height: calc((331px * 2) + 10px);*/
+  position: relative;
+}
+.grid02 .tile-content.second:before {
+  display: block;
+  content: " ";
+  width: 100%;
+  padding-top: 76%;
+}
+.grid02 .tile-content.second > .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 1900px) {
+  .grid02 .tile-content.first {
+    position: relative;
+  }
+  .grid02 .tile-content.first:before {
+    display: block;
+    content: " ";
+    width: 100%;
+    padding-top: 155%;
+  }
+  .grid02 .tile-content.first > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+@media (max-width: 1800px) {
+  .grid02 .tile-content.first {
+    position: relative;
+  }
+  .grid02 .tile-content.first:before {
+    display: block;
+    content: " ";
+    width: 100%;
+    padding-top: 155%;
+  }
+  .grid02 .tile-content.first > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+@media (max-width: 1400px) {
+  .grid02 .tile-content.first {
+    position: relative;
+  }
+  .grid02 .tile-content.first:before {
+    display: block;
+    content: " ";
+    width: 100%;
+    padding-top: 157%;
+  }
+  .grid02 .tile-content.first > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .grid01 > .tile {
+    width: 25%;
+  }
+
+  .grid02 .tile-content.first {
+    position: relative;
+  }
+  .grid02 .tile-content.first:before {
+    display: block;
+    content: " ";
+    width: 100%;
+    padding-top: 158%;
+  }
+  .grid02 .tile-content.first > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .grid02 .tile-content.second {
+    position: relative;
+  }
+  .grid02 .tile-content.second:before {
+    display: block;
+    content: " ";
+    width: 100%;
+    padding-top: 76%;
+  }
+  .grid02 .tile-content.second > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .grid02 .tile-content.first {
+    position: relative;
+  }
+  .grid02 .tile-content.first:before {
+    display: block;
+    content: " ";
+    width: 100%;
+    padding-top: 160%;
+  }
+  .grid02 .tile-content.first > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+@media (max-width: 800px) {
+  .grid01 > .tile {
+    width: 33.333%;
+  }
+
+  .grid02 .tile-content.first {
+    position: relative;
+  }
+  .grid02 .tile-content.first:before {
+    display: block;
+    content: " ";
+    width: 100%;
+    padding-top: 332%;
+  }
+  .grid02 .tile-content.first > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .grid02 .tile-content.second {
+    position: relative;
+  }
+  .grid02 .tile-content.second:before {
+    display: block;
+    content: " ";
+    width: 100%;
+    padding-top: 105%;
+  }
+  .grid02 .tile-content.second > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+@media (max-width: 700px) {
+  .grid02 .tile-content.first {
+    position: relative;
+  }
+  .grid02 .tile-content.first:before {
+    display: block;
+    content: " ";
+    width: 100%;
+    padding-top: 337%;
+  }
+  .grid02 .tile-content.first > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+@media (max-width: 600px) {
+  .grid01 > .tile {
+    width: 50%;
+  }
+
+  .grid02 .tile-content.first {
+    position: relative;
+  }
+  .grid02 .tile-content.first:before {
+    display: block;
+    content: " ";
+    width: 100%;
+    padding-top: 876%;
+  }
+  .grid02 .tile-content.first > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .grid02 .tile-content.second {
+    position: relative;
+  }
+  .grid02 .tile-content.second:before {
+    display: block;
+    content: " ";
+    width: 100%;
+    padding-top: 167%;
+  }
+  .grid02 .tile-content.second > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+@media (max-width: 400px) {
+  .grid01 > .tile {
+    width: 50%;
+  }
+
+  .grid02 .tile-content.first {
+    position: relative;
+  }
+  .grid02 .tile-content.first:before {
+    display: block;
+    content: " ";
+    width: 100%;
+    padding-top: 332%;
+  }
+  .grid02 .tile-content.first > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .grid02 .tile-content.second {
+    position: relative;
+  }
+  .grid02 .tile-content.second:before {
+    display: block;
+    content: " ";
+    width: 100%;
+    padding-top: 105%;
+  }
+  .grid02 .tile-content.second > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .grid01 {
+    width: 100%;
+  }
+
+  .grid02 {
+    width: 100%;
+  }
+}
+@media (max-width: 300px) {
+  .grid01 > .tile {
+    width: 100%;
+    padding: 10px 5px 0 5px;
+  }
+
+  .grid02 .tile-content.first {
+    position: relative;
+  }
+  .grid02 .tile-content.first:before {
+    display: block;
+    content: " ";
+    width: 100%;
+    padding-top: 332%;
+  }
+  .grid02 .tile-content.first > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .grid02 .tile-content.second {
+    position: relative;
+  }
+  .grid02 .tile-content.second:before {
+    display: block;
+    content: " ";
+    width: 100%;
+    padding-top: 105%;
+  }
+  .grid02 .tile-content.second > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .grid01 {
+    width: 100%;
+  }
+
+  .grid02 {
+    width: 100%;
+  }
+}
